@@ -1,0 +1,21 @@
+<section class="section">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="welcome">
+                <h4 class="welcome__heading">Good morning Jana!</h4>
+                <p class="welcome__info">
+                    You have <span class="welcome__span">24 days</span> to finish you plan and improve your health condition
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="welcome welcome--background">
+                <h4 class="welcome__heading">Invite your friends</h4>
+                    <form action ="#" class ="welcome__form">
+                        <input class="welcome__input" type="text" placeholder="Type an email">
+                        <button type="submit" class="btn btn-primary welcome__button">Invite</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
