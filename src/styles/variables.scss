@@ -1,22 +1,27 @@
 // Main color variables
-$blue:    #007bff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #dc3545;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+$black:        #000;
+$semiblack:    #4c5459;
+$dark:         #7e7e7e;
+$grey-darker:  #a6a6a6;
+$silver:       #d8d8d8;
+$whisper:      #eee;
+$grey:         #f6f6f6;
+$yellow:       #ffd100;
+$green:        #009639;
+$orange:       #ff6b00;
+$purple:       #d1b1d5;
+$blue:         #0065b1;
+$red:          #e2231a;
 
 $theme-colors: (
-  primary: $teal,
-  secondary: $pink,
+  primary: $green,
+  secondary: $orange,
   success: $green,
-  info: $cyan,
+  info: $blue,
   warning: $yellow,
-  danger: $red
+  danger: $red,
+  light: $whisper,
+  dark: $black,
 );
 
 @import '../../node_modules/bootstrap/scss/functions';
