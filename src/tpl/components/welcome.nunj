@@ -11,10 +11,10 @@
         <div class="col-md-6">
             <div class="welcome welcome--background">
                 <h4 class="welcome__heading">Invite your friends</h4>
-                    <form action ="#" class ="welcome__form">
-                        <input class="welcome__input" type="text" placeholder="Type an email">
-                        <button type="submit" class="btn btn-primary welcome__button">Invite</button>
-                    </form>
+                <form action="#" class="welcome__form">
+                    <input class="welcome__input" type="text" placeholder="Type an email">
+                    <button type="submit" class="btn btn-primary welcome__button">Invite</button>
+                </form>
             </div>
         </div>
     </div>
