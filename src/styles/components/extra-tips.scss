@@ -4,7 +4,7 @@
 
   &__title {
     padding-bottom: 18px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     font-weight: 900;
     line-height: 42px;
     color: $semiblack;
@@ -17,7 +17,7 @@
   justify-content: center;
   margin: 15px 0;
 
-  &__element-aside {
+  &__aside {
     display: inline-block;
 
     @include media-breakpoint-up(lg) {
@@ -25,7 +25,7 @@
     }
   }
 
-  &__element-header {
+  &__header {
     display: inline-block;
 
     @include media-breakpoint-up(lg) {
@@ -33,17 +33,17 @@
     }
   }
 
-  &__element-content {
+  &__content {
     @include media-breakpoint-up(lg) {
       margin-top: 40px;
     }
   }
 
   &__icon {
-    @include size(45px,45px);
+    @include size(45px);
 
     @include media-breakpoint-up(lg) {
-      @include size(90px, 90px);
+      @include size(90px);
 
       margin: 0 25px 25px 0;
     }
