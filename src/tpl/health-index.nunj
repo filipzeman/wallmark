@@ -5,6 +5,7 @@
 
 {% block content %}
 
-    {% include "components/welcome.nunj" %}
+        {% include "components/welcome.nunj" %}
+        {% include "components/extra-tips.nunj" %}
 
 {% endblock %}
