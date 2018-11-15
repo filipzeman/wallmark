@@ -1,0 +1,31 @@
+// Colors
+$black:        #000;
+$semiblack:    #4c5459;
+$dark:         #7e7e7e;
+$grey-darker:  #a6a6a6;
+$silver:       #d8d8d8;
+$whisper:      #eee;
+$grey:         #f6f6f6;
+$yellow:       #ffd100;
+$green:        #009639;
+$orange:       #ff6b00;
+$purple:       #d1b1d5;
+$blue:         #0065b1;
+$red:          #e2231a;
+
+// Theme colors
+$theme-colors: (
+  primary: $green,
+  secondary: $orange,
+  success: $green,
+  info: $blue,
+  warning: $yellow,
+  danger: $red,
+  light: $whisper,
+  dark: $black,
+);
+
+// Import of Bootstrap functions, variables and mixins
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';

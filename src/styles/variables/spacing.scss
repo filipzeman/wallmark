@@ -1,0 +1,28 @@
+// Spacing
+
+// Gutters
+$gutter-none:           0;
+$gutter-element-xs:     rem(10);
+$gutter-element-sm:     rem(15);
+$gutter-element-md:     rem(20);
+$gutter-element:        rem(30);
+$gutter-element-lg:     rem(40);
+$gutter-component-xl:   rem(50);
+$gutter-section:        rem(70);
+
+// Spacers
+$spacer: rem(20);
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+);
+$spacer-none:   map-get($spacers, 0);
+$spacer-xs:     map-get($spacers, 1);
+$spacer-sm:     map-get($spacers, 2);
+$spacer:        map-get($spacers, 3);
+$spacer-lg:     map-get($spacers, 4);
+$spacer-xl:     map-get($spacers, 5);
