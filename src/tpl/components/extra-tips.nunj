@@ -1,0 +1,66 @@
+{% from '../helpers/svg.nunj' import svg %}
+
+<section class="section">
+    <div class="container">
+        <div class="row extra-tips">
+            <div class="col-10 col-lg-8">
+                <h2 class="extra-tips__title">
+                    Extra tips
+                </h2>
+            </div>
+        </div>
+        <div class="row extra-tip">
+            <div class="col-lg-10">
+                <div class="extra-tip__aside">
+                    {{ svg(name='icon-sport', sprite='icons', className='extra-tip__icon')}}
+                </div>
+                <div class="extra-tip__header">
+                    <h3 class="extra-tip__heading">
+                        Mental Health
+                    </h3>
+                </div>
+                <div class="extra-tip__content">
+                    <p class="extra-tip__text">
+                        Smile at people around you more; even
+                        at those who you meet randomly. You
+                        will soon see how rapidly your mood
+                        will improve. Start your day by smiling
+                        when you wake up. Whether sitting or
+                        lying in your bed, just smile for a
+                        couple of minutes. Doing this you
+                        activate facial muscles which send the
+                        proper stimulus to your brain and your
+                        spirit will lift straight away.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row extra-tip">
+            <div class="col-lg-10">
+                <div class="extra-tip__aside">
+                    {{ svg(name='icon-diet', sprite='icons', className='extra-tip__icon')}}
+                </div>
+                <div class="extra-tip__header">
+                    <h3 class="extra-tip__heading">Diet</h3>
+                </div>
+                <div class="extra-tip__content">
+                    <p class="extra-tip__text">
+                        Smile at people around you more; even
+                        at those who you meet randomly. You
+                        will soon see how rapidly your mood
+                        will improve. Start your day by smiling
+                        when you wake up. Whether sitting or
+                        lying in your bed, just smile for a
+                        couple of minutes. Doing this you
+                        activate facial muscles which send the
+                        proper stimulus to your brain and your
+                        spirit will lift straight away.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
