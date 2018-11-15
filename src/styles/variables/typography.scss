@@ -1,0 +1,61 @@
+// Typography
+
+// Fonts
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-extrabold: 900;
+
+$font-family-base: 'Roboto';
+
+$font-size-md: rem(13);
+$font-size-base: rem(16);
+$font-size-lg: rem(18);
+$font-size-xl: rem(20);
+
+$font-weight-base: $font-weight-normal;
+$line-height-md: 1.4;
+$line-height-base: 1.5;
+$line-height-lg: 2;
+$text-margin-bottom-base: $font-size-base * $line-height-base;
+
+// Headings
+$headings-font-family: $font-family-base;
+$headings-font-weight: $font-weight-extrabold;
+
+$headings: (
+  h1: (
+    'font-size': rem(36),
+    'line-height': $line-height-base,
+    'margin-bottom': $text-margin-bottom-base,
+    'color': $black,
+  ),
+  h2: (
+    'font-size': rem(32),
+    'line-height': $line-height-base,
+    'margin-bottom': $text-margin-bottom-base,
+    'color': $semiblack,
+  ),
+  h3: (
+    'font-size': rem(22),
+    'line-height': $line-height-base,
+    'margin-bottom': $text-margin-bottom-base,
+    'color': $semiblack,
+  ),
+  h4: (
+    'font-size': rem(20),
+    'line-height': $line-height-base,
+    'margin-bottom': $text-margin-bottom-base,
+    'color': $semiblack,
+  ),
+);
+
+// Paragraphs
+$paragraph-margin-bottom: $text-margin-bottom-base;
+
+// Links
+$link-font-weight: $font-weight-normal;
+$link-color: map-get($theme-colors, secondary);
+$link-decoration: none;
+$link-hover-color: map-get($theme-colors, secondary);
+$link-hover-decoration: none;

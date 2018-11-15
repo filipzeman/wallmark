@@ -1,6 +1,7 @@
-@import 'variables';
+@import 'variables/*';
 @import 'bootstrap/bootstrap';
 @import 'base/*';
+@import 'functions/*';
 
 body {
   font-family: 'Roboto', $font-family-base;

@@ -1,0 +1,13 @@
+// Rem
+
+/**
+ * Convert px to rem
+ * @param {Unit} px-size - Size of the pixels to be converted to rem
+ * @returns {Unit} rem-size - Rem unit
+ */
+@function rem($px-size) {
+  $font-base-size: 16;
+  $rem-size: ($px-size / $font-base-size) * 1rem;
+
+  @return $rem-size;
+}
