@@ -1,12 +1,12 @@
 .extra-tips {
   justify-content: center;
-  margin-top: 30px;
+  margin-top: $gutter-element;
 
   &__title {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
-    font-weight: 900;
-    line-height: 42px;
+    padding-bottom: $spacer;
+    margin-bottom: $gutter-element-md;
+    font-weight: $font-weight-extrabold;
+    line-height: $line-height-lg;
     color: $semiblack;
     text-align: center;
     border-bottom: 1px solid $silver;
@@ -15,7 +15,7 @@
 
 .extra-tip {
   justify-content: center;
-  margin: 15px 0;
+  margin: $gutter-element-sm 0;
 
   &__aside {
     display: inline-block;
@@ -35,7 +35,7 @@
 
   &__content {
     @include media-breakpoint-up(lg) {
-      margin-top: 40px;
+      margin-top: $gutter-element-xs;
     }
   }
 
@@ -45,25 +45,31 @@
     @include media-breakpoint-up(lg) {
       @include size(90px);
 
-      margin: 0 25px 25px 0;
+      margin-right: $gutter-element;
+      margin-bottom: $gutter-element;
     }
   }
 
   &__heading {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: 700;
+    margin-left: $gutter-element-xs;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
     color: map-get($theme-colors, primary);
 
     @include media-breakpoint-up(lg) {
-      margin-left: 0;
+      margin-left: $gutter-none;
     }
   }
 
   &__text {
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 20px;
+    padding: $gutter-none;
+    margin-top: $gutter-element-xs;
+    font-size: $font-size-md;
+    font-weight: $font-weight-light;
+    line-height: $line-height-md;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: $spacer-lg;
+    }
   }
 }

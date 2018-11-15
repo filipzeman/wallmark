@@ -15,9 +15,9 @@
                     {{ svg(name='icon-sport', sprite='icons', className='extra-tip__icon')}}
                 </div>
                 <div class="extra-tip__header">
-                    <h4 class="extra-tip__heading">
+                    <h3 class="extra-tip__heading">
                         Mental Health
-                    </h4>
+                    </h3>
                 </div>
                 <div class="extra-tip__content">
                     <p class="extra-tip__text">
@@ -41,9 +41,7 @@
                     {{ svg(name='icon-diet', sprite='icons', className='extra-tip__icon')}}
                 </div>
                 <div class="extra-tip__header">
-                    <h4 class="extra-tip__heading">
-                        Diet
-                    </h4>
+                    <h3 class="extra-tip__heading">Diet</h3>
                 </div>
                 <div class="extra-tip__content">
                     <p class="extra-tip__text">
