@@ -27,9 +27,13 @@
   &__button {
     position: relative;
     left: -10px;
+    padding: 0 $spacer;
+    font-size: $font-size-lg;
 
-    @include media-breakpoint-up(sm) {
-      left: 15px;
+    &--padded {
+      @include media-breakpoint-up(sm) {
+        left: 15px;
+      }
     }
   }
 
