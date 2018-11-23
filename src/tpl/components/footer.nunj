@@ -1,0 +1,91 @@
+{% from '../helpers/svg.nunj' import svg %}
+
+<footer class="footer">
+  <div class="row no-gutters">
+    <div class="col-sm-5 col-md-5 col-lg-4 col-lg-3">
+      <div class="footer__header">
+        <div class="footer__company">
+          <a href="#">
+            {{ svg(name='site-logo', sprite='logos', className='logo')}}
+            <div class="footer__company-wrapper">
+              {{ svg(name='site-logo-text', sprite='logos', className='logo--walmark')}}
+              <span class="logo--text">
+                  Your biggest supporter
+              </span>
+            </div>
+          </a>
+        </div>
+        <p class="footer__company-text">
+          The only truly regional player and leading food supplement producer in CEE.
+        </p>
+        <div class="footer__company-favicons">
+          <a href="#" class="btn btn-fa btn-fb footer__company-favicon"><i class="fa fa-facebook-f"></i></a>
+          <a href="#" class="btn btn-fa btn-tw footer__company-favicon"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="btn btn-fa btn-go footer__company-favicon"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="btn btn-fa btn-in footer__company-favicon"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="btn-fa btn btn-rs footer__company-favicon"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7 col-md-7 col-lg-8 col-xl-9">
+      <div class="nav-secondary">
+        <div class="col-xl-4">
+          <h2 class="nav-secondary__heading collapsible">For customers</h2>
+          <ul class="nav-secondary__list content">
+            <li class="nav-secondary__item">Ambassador</li>
+            <li class="nav-secondary__item">Products</li>
+            <li class="nav-secondary__item">Articles</li>
+            <li class="nav-secondary__item">Terms & Conditions</li>
+            <li class="nav-secondary__item">Sitemap</li>
+          </ul>
+        </div>
+        <div class="col-xl-4">
+          <h2 class="nav-secondary__heading collapsible">Company</h2>
+          <ul class="nav-secondary__list content">
+            <li class="nav-secondary__item">About Walmark</li>
+            <li class="nav-secondary__item">Media</li>
+            <li class="nav-secondary__item">Jobs</li>
+            <li class="nav-secondary__item">Privacy policy</li>
+            <li class="nav-secondary__item">Contacts</li>
+          </ul>
+        </div>
+        <div class="col-xl-4">
+          <h2 class="nav-secondary__heading collapsible">Receive inspiration & tips</h2>
+          <div class="nav-secondary__wrapper content">
+            <form action="#" class="welcome__form">
+              <input class="welcome__input" type="email" placeholder="Type your email...">
+              <button type="submit" class="btn btn-secondary welcome__button">&nbspOk&nbsp</button>
+            </form>
+            <span class="nav-secondary__legal">Private, secure, spam-free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="row">
+    <div class="col-12">
+      <div class="copyright container-fluid">
+        <p class="copyright__text">
+          Copyright (C) 2017 Walmark line - all rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+    });
+  }
+</script>
