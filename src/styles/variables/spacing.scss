@@ -2,7 +2,7 @@
 
 // Gutters
 $gutter-none:           0;
-$gutter-element-xs:     rem(10);
+$gutter-element-xs:     rem(8);
 $gutter-element-sm:     rem(15);
 $gutter-element-md:     rem(20);
 $gutter-element:        rem(30);
@@ -14,7 +14,7 @@ $gutter-section:        rem(70);
 $spacer: rem(20);
 $spacers: (
   0: 0,
-  1: $spacer * .25,
+  1: $spacer * .2,
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
