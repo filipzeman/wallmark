@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ _cssPath }}/main{% if not _dev %}.min{% endif %}.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     {% if firstVisit %}
         <script>
@@ -33,7 +34,6 @@
     {% endif %}
 </head>
 <body>
-    {% include "../components/cookie-law.nunj" %}
 
     {# Main content of the page #}
     <main>
@@ -41,6 +41,8 @@
             {% block content %}{% endblock %}
 
     </main>
+
+    {% include "../components/footer.nunj"%}
 
     {# Scripts #}
     <script>
