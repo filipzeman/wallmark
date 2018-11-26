@@ -1,14 +1,13 @@
-@import 'variables/*';
-@import 'bootstrap/bootstrap';
-@import 'base/*';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 @import 'functions/*';
+@import 'mixins/*';
+@import 'variables/*';
+@import 'base/*';
+@import 'bootstrap/bootstrap';
+@import 'utilities/*';
 
 body {
-  font-family: 'Roboto', $font-family-base;
-
-  &.wf-active {
-    font-family: $font-family-base;
-  }
+  font-family: $font-family-base, sans-serif;
 }
 
 @import 'components/*';
