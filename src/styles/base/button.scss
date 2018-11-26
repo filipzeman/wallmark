@@ -1,3 +1,36 @@
+.btn {
+  color: map-get($theme-colors, lightest);
+  text-decoration: none;
+  border-radius: $border-radius;
+
+  &--fa {
+    padding: $spacer-xs 0 0 0;
+    border: 0;
+
+    @include size(30px);
+  }
+
+  &--blue-darkest {
+    @include button-bg($blue-darkest);
+  }
+
+  &--blue-darker {
+    @include button-bg($blue-darker);
+  }
+
+  &--blue-lighter {
+    @include button-bg($blue-lighter);
+  }
+
+  &--orange-darker {
+    @include button-bg($orange-darker);
+  }
+
+  &--orange {
+    @include button-bg($orange);
+  }
+}
+
 /**
  * Button
  *
