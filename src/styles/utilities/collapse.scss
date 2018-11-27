@@ -1,0 +1,26 @@
+.collapsible {
+  width: 100%;
+  cursor: pointer;
+
+  &::after {
+    float: right;
+    margin-left: $gutter-element-xs;
+    font-weight: $font-weight-bold;
+    color: map-get($theme-colors, lightest);
+    content: '\25BE';
+  }
+}
+
+.active {
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.content {
+  max-height: 0;
+  padding: $spacer-sm $spacer 0 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: max-height  .2s ease-out;
+}
