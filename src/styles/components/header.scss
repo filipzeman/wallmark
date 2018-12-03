@@ -1,0 +1,215 @@
+.header {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacer-sm $spacer;
+  margin-bottom: $gutter-component-xl;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .23);
+
+  @include media-breakpoint-up(md) {
+    padding: $spacer-sm $spacer-lg $spacer-xs $spacer-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    align-items: flex-start;
+  }
+
+  &__wrapper-logo {
+    display: flex;
+    align-self: center;
+  }
+
+  &__logo {
+    justify-content: flex-start;
+  }
+
+  &__controls {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  &__controls-item {
+    display: flex;
+    align-items: center;
+    margin-right: $gutter-element-md;
+
+    &--padding-md {
+      @include media-breakpoint-up(md) {
+        margin-right: $gutter-element-sm;
+      }
+    }
+
+    &--padding-xl {
+      @include media-breakpoint-up(xl) {
+        margin-right: $gutter-element-xs;
+      }
+    }
+  }
+
+  &__controls-phone {
+    color: map-get($theme-colors, dark);
+  }
+
+  &__controls-icon {
+    fill: map-get($theme-colors, secondary);
+
+    @include size(22px);
+  }
+
+  &__controls-user {
+    @include media-breakpoint-up(lg) {
+      fill: map-get($theme-colors, dark);
+    }
+  }
+
+  &__controls-name {
+    margin-right: $gutter-element-xs;
+    color: map-get($theme-colors, secondary);
+
+    &::after {
+      margin-left: $gutter-element-xs;
+      color: map-get($theme-colors, dark);
+      content: '|';
+    }
+  }
+
+  &__controls-wish {
+    font-weight: $font-weight-light;
+  }
+
+  &__controls-toggle {
+    padding-top: $spacer-xs;
+
+    // TODO: Add transition to show action (X)
+
+    & span {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 30px;
+      height: 4px;
+      margin-bottom: 4px;
+      background: map-get($theme-colors, dark);
+      border-radius: 3px;
+
+      &:hover {
+        background: red;
+      }
+    }
+
+    & input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      display: block;
+      width: 30px;
+      height: 28px;
+      cursor: pointer;
+      opacity: 0;
+      -webkit-touch-callout: none;
+
+      &:checked ~ #navigation-list {
+        display: flex;
+      }
+    }
+  }
+}
+
+.primary-navigation {
+  display: flex;
+  margin-top: $gutter-element-xs;
+  line-height: $line-height-md;
+
+  &__item {
+    display: inline;
+    margin: $gutter-element-xs $gutter-element-sm;
+    list-style: none;
+
+    &:last-child {
+      margin-right: $spacer-none;
+    }
+  }
+
+  &__link {
+    color: map-get($theme-colors, dark);
+
+    &:hover {
+      color: map-get($theme-colors, secondary);
+    }
+  }
+
+  & ul {
+    margin-bottom: $gutter-none;
+  }
+
+  & .btn {
+    padding: $spacer-none $spacer-sm;
+    line-height: $line-height-base;
+  }
+}
+
+#navigation-list:target {
+  display: flex;
+}
+// TODO: Plan to create utility classes for hidin/showing conten on specific breakpoint (up)
+
+.show-sm {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: initial;
+  }
+}
+
+.show-md {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.show-lg {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.show-xl {
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.hide-md {
+  display: initial;
+  align-self: center;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.hide-xl {
+  display: initial;
+  align-self: center;
+
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+
+.display_nav #navigation-list {
+  display: flex;
+}

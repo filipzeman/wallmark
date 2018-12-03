@@ -1,0 +1,70 @@
+{% from '../helpers/svg.nunj' import svg %}
+
+<header class="header">
+  <div class="header__wrapper-logo">
+  <a href="#" class="header__logo">
+    {{ svg(name='site-logo', sprite='logos', className='logo')}}
+     <div class="footer__company-wrapper show-sm">
+      {{ svg(name='site-logo-text', sprite='logos', className='logo--walmark')}}
+      <span class="logo--text show-md">
+        Your biggest supporter
+      </span>
+    </div>
+  </a>
+
+  </div>
+  <div class="header__wrapper-right">
+
+  <div class="header__controls">
+    <span class="header__controls-item header__controls-item--padding-xl show-xl">Helpline:&nbsp;<a href="tel:+420800141141" class="header__controls-phone">800 141 141</a></span>
+    <a href="#" class="header__controls-item header__controls-user header__controls-item--padding-md">
+      {{ svg(name='icon-user', sprite='icons', className='header__controls-icon')}}
+    </a>
+    <span class="header__controls-item header__controls-name show-md">Jana Nováková</span>
+    <a href="#" class="header__controls-item header__controls-logout show-md">Log out</a>
+    <a href="#" class="header__controls-item hide-md">
+      {{ svg(name='icon-logout', sprite='icons', className='header__controls-icon')}}
+    </a>
+    <a href="#" class="header__controls-item header__controls-item--padding-xl">
+      {{ svg(name='icon-wishlist', sprite='icons', className='header__controls-icon')}}
+    </a>
+    <span class="header__controls-item header__controls-wish show-xl">Wish list is empty</span>
+    <a href="#" class="header__controls-item">
+      {{ svg(name='icon-search', sprite='icons', className='header__controls-icon')}}
+    </a>
+  <span class="header__controls-item header__controls-item--padding-md show-md hide-xl">MENU</span>
+  <span class="header__controls-toggle hide-xl">
+    <input type="checkbox" id="toggle_nav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  </div>
+
+  <nav class="primary-navigation" id="primary-navigation "role="navigation">
+    <ul id="navigation-list" class="show-xl">
+
+      <!-- TODO: Make a macro, go through all values from JSON? -->
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link active">Homepage</a></li>
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link">About us</a></li>
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link">Products</a></li>
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link">Nutrition programs</a></li>
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link">Articles</a></li>
+      <li class="primary-navigation__item"><a href="#" class="primary-navigation__link">Ambassador</a></li>
+      <li class="primary-navigation__item"><a href="#" class="btn btn-primary">Health index</a></li>
+    </ul>
+  </nav>
+  </div>
+
+</header>
+
+<script>
+	var nav = document.getElementById('toggle_nav'),
+	    body = document.body;
+
+	nav.addEventListener('click', function(e) {
+		body.className = body.className? '' : 'display_nav';
+		e.preventDefault();
+	});
+</script>
