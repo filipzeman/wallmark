@@ -1,0 +1,42 @@
+@mixin donut-chart($perc, $size, $width, $base, $center, $color) {
+  $color2: $color;
+  $base2: $base;
+  $deg: ($perc/100*360) + deg;
+  $deg1: 90deg;
+  $deg2: $deg;
+
+  @if $perc < 50 {
+    $base: $color;
+    $color: $base2;
+    $color2: $base2;
+    $deg1: ($perc/100*360 + 90) + deg;
+    $deg2: 0deg;
+  }
+
+  .donut-chart {
+    width: $size;
+    height: $size;
+    background: $base;
+
+    &__slice {
+      &--one {
+        clip: rect(0 $size $size/2 0);
+        background: $color;
+        transform: rotate($deg1);
+      }
+      &--two {
+        clip: rect(0 $size/2 $size 0);
+        background: $color2;
+        transform: rotate($deg2);
+      }
+    }
+
+    &__center {
+      top: $width;
+      left: $width;
+      width: $size - ($width * 2);
+      height: $size - ($width * 2);
+      background: $center;
+    }
+  }
+}
