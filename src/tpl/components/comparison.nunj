@@ -74,12 +74,9 @@
                 <span class="comparison__values">35%</span>
               </div>
               <div class="col-12">
-                <p class="box__footer">Your results are better than 75% of people</p>
+                <p class="box__footer">Your answer:<strong>&nbsp;Yes</strong></p>
               </div>
             </div>
-
-
-
           </div>
         </div>
         <div class="col-12">
