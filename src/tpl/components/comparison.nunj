@@ -1,0 +1,104 @@
+{% from '../helpers/svg.nunj' import svg %}
+
+<section class="section">
+  <div class="container-fluid">
+    <div class="comparison">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="extra-tips__title">My comparison</h2>
+          <p class="comparison__promo-text">See how you compare with others</p>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">Health Index</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="comparison__labels">AVERAGE</p>
+                <span class="comparison__values">53%</span>
+              </div>
+              <div class="col-4 center-horizontal">
+                <div class="comparison__div-chart">
+                  {{ svg(name='icon-chart', sprite='icons', className='comparison__icon-chart')}}
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="comparison__labels">YOURS</p>
+                <span class="comparison__values">75%</span>
+              </div>
+              <div class="col-12">
+                <p class="box__footer">Your results are better than 75% of people</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">BMI</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="comparison__labels">AVERAGE</p>
+                <span class="comparison__values">53%</span>
+              </div>
+              <div class="col-4 center-horizontal">
+                <div class="comparison__div-chart">
+                  {{ svg(name='icon-chart', sprite='icons', className='comparison__icon-chart')}}
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="comparison__labels">YOURS</p>
+                <span class="comparison__values">75%</span>
+              </div>
+              <div class="col-12">
+                <p class="box__footer">Your results are better than 75% of people</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">What others answered</p>
+            <canvas id="myCanvas" width="200px" height="200px"></canvas>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle comparison__subtitle--smaller">Don't worry, we will help you get better!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  function draw() {
+	  var canvas = document.getElementById("myCanvas");
+	  var ctx = canvas.getContext("2d");
+    var colors = ['#d1b1d5', '#ffd100'];
+    var angles= [Math.PI * 0.3, Math.PI * 0.7];
+    var beginAngle = 0;
+    var endAngle = 0;
+
+    // Iterate through angles
+    for(var i = 0; i < angles.length; i + 1) {
+      beginAngle = endAngle;
+      endAngle = endAngle + angles[i];
+
+      ctx.beginPath();
+      ctx.fillStyle = colors[i % colors.length];
+
+      ctx.moveTo(100, 100);
+      ctx.arc(100, 100, 80, beginAngle, endAngle);
+      ctx.lineTo(100,100);
+      ctx.stroke();
+
+      //Fill
+      ctx.fill();
+    }
+  }
+
+  //window.onload = draw();
+
+</script>
