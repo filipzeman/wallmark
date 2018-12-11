@@ -1,0 +1,91 @@
+{% from '../helpers/svg.nunj' import svg %}
+
+<section class="section">
+  <div class="container-fluid">
+    <div class="comparison">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="extra-tips__title">My comparison</h2>
+          <p class="comparison__promo-text">See how you compare with others</p>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">Health Index</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="comparison__labels">AVERAGE</p>
+                <span class="comparison__values">53%</span>
+              </div>
+              <div class="col-4 center-horizontal">
+                <div class="comparison__div-chart">
+                  {{ svg(name='icon-chart', sprite='icons', className='comparison__icon')}}
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="comparison__labels">YOURS</p>
+                <span class="comparison__values">75%</span>
+              </div>
+              <div class="col-12">
+                <p class="box__footer">Your results are better than 75% of people</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">BMI</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="comparison__labels">AVERAGE</p>
+                <span class="comparison__values">53%</span>
+              </div>
+              <div class="col-4 center-horizontal">
+                <div class="comparison__div-chart">
+                  {{ svg(name='icon-chart', sprite='icons', className='comparison__icon')}}
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="comparison__labels">YOURS</p>
+                <span class="comparison__values">75%</span>
+              </div>
+              <div class="col-12">
+                <p class="box__footer">Your results are better than 75% of people</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box">
+            <p class="comparison__subtitle">What others answered</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="comparison__labels">YES</p>
+                <span class="comparison__values">65%</span>
+              </div>
+              <div class="col-4 center-horizontal">
+                <div class="donut-chart">
+                  <div class="donut-chart__slice donut-chart__slice--one"></div>
+                  <div class="donut-chart__slice donut-chart__slice--two"></div>
+                  <div class="donut-chart__center"></div>
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="comparison__labels">NO</p>
+                <span class="comparison__values">35%</span>
+              </div>
+              <div class="col-12">
+                <p class="box__footer">Your answer:<strong>&nbsp;Yes</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box box--special">
+              <p class="comparison__subtitle comparison__subtitle--smaller">Don't worry, we will help you get better!</p>
+              <span>{{ svg(name='icon-emoticon', sprite='icons', className='comparison__icon-smiley')}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

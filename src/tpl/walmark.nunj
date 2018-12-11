@@ -7,5 +7,6 @@
 
         {% include "components/welcome.nunj" %}
         {% include "components/extra-tips.nunj" %}
+        {% include "components/comparison.nunj" %}
 
 {% endblock %}

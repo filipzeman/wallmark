@@ -1,0 +1,111 @@
+@include donut-chart(35, 60px, 15px, #009639, #fff, #ffd2b2);
+
+.comparison {
+  display: flex;
+  text-align: left;
+
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+  }
+
+  &__promo-text {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-light;
+    line-height: $line-height-lg;
+    color: $semiblack;
+  }
+
+  &__subtitle {
+    margin-bottom: $gutter-element-md;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-extrabold;
+    line-height: $line-height-lg;
+    color: map-get($theme-colors, primary);
+
+    &--smaller {
+      margin-bottom: $gutter-none;
+      line-height: $line-height-md;
+    }
+  }
+
+  &__div-chart {
+    @include size(60px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: $gutter-none;
+    background-color: $silver;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    @include size(30px);
+  }
+
+  &__icon-smiley {
+    margin-left: $gutter-element-md;
+    fill: map-get($theme-colors, primary);
+
+    @include size(24px);
+  }
+
+  &__labels {
+    margin-bottom: $gutter-element-sm;
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+  &__values {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-extrabold;
+    line-height: $line-height-md;
+    color: map-get($theme-colors, secondary);
+    text-align: center;
+  }
+}
+
+.box {
+  justify-content: center;
+  padding: $spacer;
+  margin-bottom: $gutter-element-md;
+  border: 4px solid map-get($theme-colors, light);
+  border-radius: $border-radius;
+
+  &__footer {
+    margin-top: $gutter-element-md;
+    margin-bottom: $gutter-element-xs;
+    font-weight: $font-weight-light;
+    line-height: $line-height-base;
+  }
+
+  &--special {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.donut-chart {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+
+  &__slice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__center {
+    position: absolute;
+    border-radius: 50%;
+  }
+}
