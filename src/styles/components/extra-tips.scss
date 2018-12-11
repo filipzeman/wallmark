@@ -1,12 +1,12 @@
 .extra-tips {
   justify-content: center;
-  margin-top: $gutter-element;
+  margin-top: $gutter-component-xl;
 
   &__title {
-    padding-bottom: $spacer-xs;
-    margin-bottom: $gutter-element-lg;
+    padding-bottom: $spacer-sm;
+    margin-bottom: $gutter-element-md;
     font-weight: $font-weight-extrabold;
-    line-height: $line-height-lg;
+    line-height: $line-height-base;
     color: $semiblack;
     text-align: center;
     border-bottom: 1px solid $silver;
